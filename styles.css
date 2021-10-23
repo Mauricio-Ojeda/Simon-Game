@@ -1,0 +1,167 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+/* id`s */
+
+#wrapper{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+/* classes */
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+@media (max-width: 1200px )  {
+  
+  #level-title {
+    margin:  7%;
+    font-size: 2.5rem;
+    
+  }
+  .container{
+
+    margin: inherit;
+
+  }
+
+  .btn {
+    margin: 15px;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    border: 8px solid black;
+    border-radius: 20%;
+
+  }
+
+
+}  
+
+@media (max-width: 800px )  {
+  
+    #level-title {
+      margin:  10%;
+      font-size: 2rem;
+      
+    }
+  
+  .container{
+    margin: inherit;
+
+  }
+  .btn {
+    margin: 15px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 8px solid black;
+    border-radius: 20%;
+
+  }
+
+
+}
+
+@media (max-width: 640px )  {
+
+  #level-title {
+    margin-top:  15%;
+    font-size: 1.5rem;
+    
+  }
+  .container{
+    margin: inherit;
+
+  }
+
+  .btn {
+    margin: 12px;
+    display: inline-block;
+    height: 75px;
+    width: 75px;
+    border: 8px solid black;
+    border-radius: 20%;
+
+  }
+
+
+}  
+
+@media (max-width: 640px )  {
+
+  #level-title {
+    margin-top:  10%;
+    font-size: 1.3rem;
+    
+  }
+  .container{
+    margin: inherit;
+
+  }
+
+  .btn {
+    margin: 12px;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border: 8px solid black;
+    border-radius: 20%;
+
+  }
+
+
+} 
