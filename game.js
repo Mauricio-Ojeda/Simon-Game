@@ -117,6 +117,7 @@ $('.myButton').click( () => {
     if (!started) {
         nextSequence()
         started = true;
+        $('.myButton').text('Start Game');
         console.log("entro al if de game start por el button");
     }
 })
