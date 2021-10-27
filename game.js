@@ -55,10 +55,6 @@ $('.btn').on('click', function() {
 
     userClickedPattern.push(userChosenColour); // se arma el arreglo del patron del usuario
 
-    console.log(userChosenColour);
-
-    console.log(userClickedPattern);
-
     playSound(userChosenColour);
 
     animatePress(userChosenColour);
@@ -89,11 +85,12 @@ function checkAnswer(currentLevel) {
         }
 
 
-    } else { 
+    }else { 
         // Si el patron no es igual se manda un msj de error y se reinicia el juego 
         const audio = new Audio('sounds/wrong.mp3');
         audio.play();
-        $('#level-title').text('Game Over, Press Any Key to Restart');
+        $('#level-title').text('Game Over, Press Any Key to Restart or click the button');
+        $('.myButton').text('Restart');
         $('body').addClass('game-over')
         setTimeout(function() {
             $('body').removeClass('game-over');
@@ -114,3 +111,12 @@ $(document).keypress( () => {
         console.log("entro al if de game start");
     }
 });
+
+// The game start if click the button
+$('.myButton').click( () => {
+    if (!started) {
+        nextSequence()
+        started = true;
+        console.log("entro al if de game start por el button");
+    }
+})
