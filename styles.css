@@ -1,6 +1,7 @@
 body {
   text-align: center;
   background-color: #011F3F;
+	padding: 100px 0;
 }
 
 
@@ -164,27 +165,4 @@ body {
 
 }  
 
-@media (max-width: 640px )  {
 
-  #level-title {
-    margin-top:  10%;
-    font-size: 1.3rem;
-    
-  }
-  .container{
-    margin: inherit;
-
-  }
-
-  .btn {
-    margin: 12px;
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-    border: 8px solid black;
-    border-radius: 20%;
-
-  }
-
-
-} 
